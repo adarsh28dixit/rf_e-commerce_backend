@@ -18,16 +18,7 @@ const createUser = async (req, res) => {
   const { name, email, password } = req.body;
 
   const hashPassword = await bcrypt.hash(password, 8);
-  // Insert the data into the table
-  //   User.create({
-  //     name: name,
-  //     email: email,
-  //     password: hashPassword,
-  //   })
-  //     .then(() =>
-  //       res.status(201).json({ message: "Record added successfully!" })
-  //     )
-  //     .catch((err) => res.status(400).json({ message: err.message }));
+  
 
   //if user is already regitered
   // Find the user by email
